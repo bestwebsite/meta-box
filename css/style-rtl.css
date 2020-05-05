@@ -1,0 +1,11 @@
+.Bestwebsite-label, .Bestwebsite-input{
+	float: right;
+}
+label.error{
+	padding-left: auto;
+	padding-right: 3px;
+}
+.Bestwebsite-button.remove-clone {
+	right: auto;
+	left: 0;
+}

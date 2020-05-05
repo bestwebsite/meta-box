@@ -1,0 +1,18 @@
+.Bestwebsite-taxonomy-add,
+.Bestwebsite-taxonomy-add-form {
+	margin-top: 6px;
+}
+.Bestwebsite-taxonomy-add-button {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: #0073aa;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.Bestwebsite-taxonomy-add-button:hover {
+	color: #00a0d2;
+}
+.Bestwebsite-taxonomy-add-form.Bestwebsite-hidden {
+	display: none;
+}

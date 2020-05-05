@@ -1,0 +1,13 @@
+.Bestwebsite-select {
+	min-width: 160px;
+}
+.Bestwebsite-select.Bestwebsite-select[multiple] {
+	padding: 0;
+}
+.Bestwebsite-select option {
+	padding: 4px 8px;
+}
+.Bestwebsite-select-all-none {
+	display: block;
+	margin-top: 5px;
+}

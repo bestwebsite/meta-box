@@ -1,0 +1,157 @@
+/* Styles for 'normal' meta boxes
+-------------------------------------------------------------- */
+
+/* Clearfix for field */
+.Bestwebsite-field:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+.Bestwebsite-field:not(:last-of-type) {
+	margin: 0 0 12px;
+}
+.Bestwebsite-label,
+.Bestwebsite-input {
+	vertical-align: top;
+	float: left;
+	box-sizing: border-box;
+}
+.Bestwebsite-label {
+	width: 25%;
+}
+.Bestwebsite-label > label {
+	font-weight: 600;
+}
+.Bestwebsite-required {
+	color: #dc3232;
+	font-weight: bold;
+	margin-left: 3px;
+}
+.Bestwebsite-input input,
+.Bestwebsite-input select {
+	max-width: 99%;
+}
+
+/* 75% if field has label, 100% if no label */
+.Bestwebsite-input {
+	width: 100%;
+}
+.Bestwebsite-label ~ .Bestwebsite-input {
+	width: 75%;
+}
+.Bestwebsite-input h4 {
+	margin: 0;
+}
+.Bestwebsite-textarea {
+	resize: vertical;
+}
+
+/* Clone */
+.Bestwebsite-clone {
+	min-height: 24px;
+	margin-bottom: 12px;
+	position: relative;
+	clear: both;
+	background: #fff;
+}
+.Bestwebsite-clone > input[type='radio'],
+.Bestwebsite-clone > input[type='checkbox'] {
+	margin: 6px 0 0 4px;
+}
+.Bestwebsite-button.remove-clone {
+	text-decoration: none;
+	color: #ccc;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	transition: color 200ms;
+}
+.Bestwebsite-button.remove-clone .dashicons {
+	font-size: 20px;
+}
+.Bestwebsite-button.remove-clone:hover {
+	color: #dc3232;
+}
+.remove-clone:focus {
+	outline: 0;
+	box-shadow: none;
+}
+.Bestwebsite-button.add-clone {
+	margin-top: 5px;
+}
+.Bestwebsite-clone-icon {
+	cursor: move;
+	background: url(../img/drag_icon.gif) no-repeat;
+	height: 23px;
+	width: 15px;
+	vertical-align: top;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.Bestwebsite-sort-clone {
+	padding-left: 15px;
+}
+
+/* jQuery validation */
+p.Bestwebsite-error {
+	color: #dc3232;
+	margin: 2px 0 5px;
+}
+input.Bestwebsite-error.Bestwebsite-error,
+textarea.Bestwebsite-error,
+select.Bestwebsite-error {
+	border-color: #dc3232;
+	background: #ffebe8;
+}
+
+/* Utilities
+-------------------------------------------------------------- */
+.Bestwebsite-sortable-placeholder {
+	background: #fcf8e3;
+	border: 1px solid #faebcc;
+	display: block;
+}
+
+
+/* Styles for 'side' meta boxes
+-------------------------------------------------------------- */
+
+#side-sortables .Bestwebsite-label,
+#side-sortables .Bestwebsite-input {
+	width: 100%;
+}
+#side-sortables .Bestwebsite-label {
+	margin-bottom: 3px;
+}
+
+/* Seamless style
+--------------------------------------------------------------*/
+.Bestwebsite-seamless {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.Bestwebsite-seamless .inside {
+	padding-left: 0;
+	padding-right: 0;
+}
+.postbox.Bestwebsite-seamless .hndle,
+.postbox.Bestwebsite-seamless .handlediv {
+	display: none;
+}
+.Bestwebsite-seamless .Bestwebsite-clone {
+	background: none;
+}
+
+/* CSS fixes
+--------------------------------------------------------------*/
+/* Fix color picker field is hidden by the post editor at after_title position. https://metabox.io/support/topic/bug-color-picker-field-is-showed-below-the-title-field/ */
+.postarea {
+	position: relative;
+	z-index: 0;
+}

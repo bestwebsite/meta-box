@@ -1,0 +1,11 @@
+.Bestwebsite-oembed-wrapper .spinner {
+	float: none;
+	vertical-align: top;
+	display: inline-block;
+}
+.Bestwebsite-embed-media {
+	margin-top: 1em;
+}
+.Bestwebsite-embed-media iframe {
+	max-width: 100%;
+}

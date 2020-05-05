@@ -1,0 +1,66 @@
+.Bestwebsite-image-wrapper .Bestwebsite-uploaded:empty {
+	display: none;
+}
+.Bestwebsite-image-wrapper .Bestwebsite-uploaded:not(:empty) {
+	display: block;
+	margin: -8px 0 0 -8px;
+	overflow: hidden;
+}
+/* Re-add WP core UI style to make sure frontend works */
+.Bestwebsite-image-item {
+	position: relative;
+	float: left;
+	padding: 8px;
+	margin: 0;
+	color: #444;
+	cursor: pointer;
+	list-style: none;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 25%;
+	box-sizing: border-box;
+}
+.Bestwebsite-image-item.thumbnail {
+	width: 150px;
+}
+.Bestwebsite-image-item.medium {
+	width: 300px;
+}
+.Bestwebsite-image-item.large {
+	width: 1024px;
+}
+
+.Bestwebsite-image-actions {
+	position: absolute;
+	z-index: 2;
+	right: 12px;
+	top: 12px;
+	opacity: 0;
+	transition: opacity .2s;
+	color: #fff;
+}
+.Bestwebsite-image-edit,
+.Bestwebsite-image-delete {
+	color: inherit;
+	text-decoration: none;
+}
+.Bestwebsite-image-overlay {
+	position: absolute;
+	z-index: 1;
+	top: 8px;
+	bottom: 8px;
+	left: 8px;
+	right: 8px;
+	background: #000;
+	opacity: 0;
+	transition: opacity .2s;
+}
+.Bestwebsite-image-item:hover .Bestwebsite-image-actions {
+	opacity: 1;
+}
+.Bestwebsite-image-item:hover .Bestwebsite-image-overlay {
+	opacity: .6;
+}

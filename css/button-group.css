@@ -1,0 +1,71 @@
+.Bestwebsite-button-input-list {
+	margin: 0;
+}
+.Bestwebsite-button-input-list li {
+	margin-bottom: 0;
+	list-style: none;
+}
+.Bestwebsite-button-input-list .Bestwebsite-button_group {
+	display: none;
+}
+.Bestwebsite-button-input-list li label {
+	display: inline-block;
+	border: #ccc solid 1px;
+	position: relative;
+	z-index: 1;
+	padding: 5px 10px;
+	background: #fff;
+}
+.Bestwebsite-button-input-list li label.selected {
+	border-color: #0073aa;
+	background: #0073aa;
+	color: #fff;
+	z-index: 2;
+}
+/* Layout not inline
+-------------------------------------------------*/
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline) li label {
+	 border-top-width: 0;
+}
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline) li:first-child label {
+	border-top-width: 1px;
+}
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline) li label.selected {
+	border-bottom: 1px solid #fff;
+}
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline) li:last-child label.selected {
+	border-bottom-color: #0073aa;
+}
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline) > li:first-child:not(:last-child) label {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.Bestwebsite-button-input-list:not(.Bestwebsite-inline)  > li:last-child:not(:first-child) label {
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+/*  Layout inline
+---------------------------------------------*/
+.Bestwebsite-button-input-list.Bestwebsite-inline li {
+	display: inline-block;
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline li label {
+	border-left-width: 0;
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline li:first-child label {
+	border-left-width: 1px;
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline li label.selected {
+	border-right-color: rgb(255, 255, 255);
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline li:last-child label.selected {
+	border-right-color: #0073aa;
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline > li:first-child:not(:last-child) label {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.Bestwebsite-button-input-list.Bestwebsite-inline > li:last-child:not(:first-child) label {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}

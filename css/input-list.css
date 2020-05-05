@@ -1,0 +1,23 @@
+.Bestwebsite-toggle-all-wrapper {
+	margin-top: 0;
+}
+.Bestwebsite-input-list {
+	margin: 0;
+	line-height: 1.8;
+}
+.Bestwebsite-input-list .Bestwebsite-input-list {
+	margin-left: 20px;
+}
+.Bestwebsite-input-list li {
+	list-style: none;
+	margin-bottom: 0;
+}
+.Bestwebsite-input-list.Bestwebsite-inline {
+	line-height: inherit;
+}
+.Bestwebsite-input-list.Bestwebsite-inline li {
+	display: inline-block;
+}
+.Bestwebsite-input-list.Bestwebsite-inline li:not(:last-child) {
+	margin-right: 20px;
+}

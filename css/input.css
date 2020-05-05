@@ -1,0 +1,35 @@
+.Bestwebsite-input-group {
+	display: flex;
+	align-items: stretch;
+}
+.Bestwebsite-input-group-append,
+.Bestwebsite-input-group-prepend {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	background: #ddd;
+}
+.Bestwebsite-input-group input {
+	margin: 0;
+}
+
+/* Dark version for WordPress >= 5.3 */
+.Bestwebsite-input-dark .Bestwebsite-input-group-append,
+.Bestwebsite-input-dark .Bestwebsite-input-group-prepend {
+	border: 1px solid #7e8993;
+}
+.Bestwebsite-input-dark .Bestwebsite-input-group-append {
+	border-radius: 0 4px 4px 0;
+}
+.Bestwebsite-input-dark .Bestwebsite-input-group-prepend {
+	border-radius: 4px 0 0 4px;
+}
+.Bestwebsite-input-dark input {
+	border-right-width: 0;
+	border-radius: 4px 0 0 4px;
+}
+.Bestwebsite-input-dark .Bestwebsite-input-group-prepend + input {
+	border-left: none;
+	border-right-width: 1px;
+	border-radius: 0 4px 4px 0;
+}

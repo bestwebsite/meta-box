@@ -1,0 +1,7 @@
+.Bestwebsite-select-tree {
+	display: inline-block;
+}
+
+.Bestwebsite-select-tree.hidden {
+	display: none;
+}

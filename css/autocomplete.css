@@ -1,0 +1,17 @@
+.Bestwebsite-autocomplete-result {
+	border-bottom: 1px solid #ccc;
+	padding: 1em 0;
+	overflow: hidden;
+}
+.Bestwebsite-autocomplete-result .label {
+	float: left;
+	width: 90%;
+}
+.Bestwebsite-autocomplete-result .actions {
+	width: 10%;
+	float: right;
+	cursor: pointer;
+}
+.ui-autocomplete {
+	z-index: 999999;
+}

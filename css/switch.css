@@ -1,0 +1,94 @@
+/* style switch
+-----------------------------*/
+.Bestwebsite-switch-label {
+	position: relative;
+	display: inline-block;
+	background-color: #ccc;
+	padding: 2px;
+	border-radius: 3px;
+	min-width: 40px;
+	height: 22px;
+	box-sizing: border-box;
+}
+
+.Bestwebsite-switch.Bestwebsite-switch {
+	display: none;
+}
+
+.Bestwebsite-switch:checked + .Bestwebsite-switch-status .Bestwebsite-switch-slider {
+	background-color: #0073aa;
+	box-shadow: 0 0 1px #0073aa;
+}
+
+.Bestwebsite-switch:checked + .Bestwebsite-switch-status .Bestwebsite-switch-slider:before {
+	left: calc(100% - 20px);
+}
+
+.Bestwebsite-switch:checked + .Bestwebsite-switch-status .Bestwebsite-switch-off {
+	visibility: hidden;
+	display: none;
+}
+
+.Bestwebsite-switch:not(:checked) + .Bestwebsite-switch-status .Bestwebsite-switch-on {
+	visibility: hidden;
+	display: none;
+}
+
+.Bestwebsite-switch-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.Bestwebsite-switch-slider:before {
+	position: absolute;
+	content: attr(title-before) "";
+	height: 18px;
+	width: 18px;
+	left: 2px;
+	bottom: 2px;
+	z-index: 99;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 2px;
+}
+
+.Bestwebsite-switch-label--square .Bestwebsite-switch-slider {
+	border-radius: 3px;
+}
+
+.Bestwebsite-switch-label--rounded,
+.Bestwebsite-switch-label--rounded .Bestwebsite-switch-slider {
+	border-radius: 34px;
+}
+
+.Bestwebsite-switch-label--rounded .Bestwebsite-switch-slider:before {
+	border-radius: 50%;
+}
+
+.Bestwebsite-switch-on,
+.Bestwebsite-switch-off {
+	display: inline-block;
+	float: left;
+	margin: 0 4px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 11px;
+	position: relative;
+	z-index: 20;
+}
+
+.Bestwebsite-switch-on {
+	padding-right: 20px;
+}
+
+.Bestwebsite-switch-off {
+	padding-left: 20px;
+}

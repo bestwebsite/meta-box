@@ -1,0 +1,21 @@
+.Bestwebsite-image-select {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 3px solid #d8d8d8;
+	border-radius: 3px;
+	padding: 1px;
+}
+.Bestwebsite-image-select img {
+	width: 100%;
+	height: 100%;
+}
+.Bestwebsite-image-select:hover,
+.Bestwebsite-image-select.Bestwebsite-active {
+	border-color: #0074a2;
+}
+.Bestwebsite-image_select.Bestwebsite-image_select {
+	display: none;
+}

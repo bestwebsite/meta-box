@@ -1,0 +1,19 @@
+.Bestwebsite-text_list-non-cloneable > .Bestwebsite-input,
+.Bestwebsite-text_list-clone {
+	display: flex;
+	flex-wrap: wrap;
+}
+.Bestwebsite-text_list-non-cloneable > .Bestwebsite-input > label,
+.Bestwebsite-text_list-clone > label {
+	margin: 0 10px 10px 0;
+}
+.Bestwebsite-text_list-non-cloneable > .Bestwebsite-input > label:last-child,
+.Bestwebsite-text_list-clone > label:last-child {
+	margin-right: 0;
+}
+
+.Bestwebsite-text-list-label {
+	font-weight: 600;
+	display: block;
+	margin-bottom: 5px;
+}
